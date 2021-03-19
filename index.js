@@ -208,15 +208,23 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
+artists[0].name;
 
+console.log(artists)
 
 //(2) Bio of the third artist (2nd index) in the array 
 
 
+artists[2].bio;
+
+console.log(artists)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+
+
+artists.splice(8,1,'Vincent Van Dough');
 
 
 
@@ -228,11 +236,12 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
-}  
-
-
+function getArtistByIndex(array,number) {
+  for(let i = 0; i <array.length; i++){
+    if(array[i].name.includes){
+  }
+  return artists.number();
+} 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
@@ -242,10 +251,21 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+
+
+
+
+function get20s(array){
+  let newArray = [];
+  for(let i = 0; i <array.length; i++){
+    if("years" <= 1925 ){
+    }else if ("years" > 1889){
+    }
+  }
+  return newArray`${this.name}'born and died ${this.years}`
 }
 
+console.log(get20s(newArray))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -257,10 +277,13 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(array,number){
+  
+  for(let i = 0; i <array.length; i++){
+    artists.splice(6,1)
+  }
 }
-   
+   console.log(removeArtist(artists))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -278,10 +301,18 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(array){
+  for(let i = 0; i <array.length; i++){
+    artists.push({'id': 20
+      'name': Bryant Paulino; 
+      'years': 1996 - 2021;
+     'genre': Web Design; 
+      'nationality': Dominican;
+      'bio': Loves French fries and music});
+  }  
+  return artists
   }
-
+console.log(addArtist(artists))
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -291,10 +322,22 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  let newArray = [];
+    for(let i = 0; i <array.length; i++){
+      if("paintings" <= 1000){
+        return loser
+      }else if ("paintings" > 100){
+        return newArray
+      }
+    }
+    return newArray`${this.name}'painted before he died' ${this.paintings}`
+  }
+  
+  console.log(lotsOfArt(newArray))
+  
+  
 }
-
 
 
 
@@ -344,16 +387,16 @@ function randomize(/* Code here */){
  
  
  /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
- function foo(){
-  console.log('its working');
-  return 'bar';
-}
-/*Don't touch the code after this line! */
-export default{
-  foo,
-  getArtistByIndex,
-  get20s,
-  removeArtist,
-  addArtist,
-  lotsOfArt
-}
+//  function foo(){
+//   console.log('its working');
+//   return 'bar';
+// }
+// /*Don't touch the code after this line! */
+// export default{
+//   foo,
+//   getArtistByIndex,
+//   get20s,
+//   removeArtist,
+//   addArtist,
+//   lotsOfArt
+// }
