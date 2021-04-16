@@ -249,8 +249,9 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array){
   let born20s = [];
   for(let i = 0; i < array.length; i++){
-    if(artists[i].years >= 1900 || artists[i].years < 2000){
+    if(array[i].years >= 1900 || array[i].years < 2000){
       born20s.push(array[i].name)
+      
     }
   }
   return born20s
